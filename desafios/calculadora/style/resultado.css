@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    color: black;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, .info, #detalhes-receita, #detalhes-gastos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e4e4e4;
+
+}
+
+#detalhes-receita, #detalhes-gastos{
+    display: none;
+}
+
+.info > h1{
+    font-size: 25pt;
+    margin-bottom: 20px;
+}
+
+.info{
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+table {
+    width: 90%;
+}
+
+table > tbody > tr > td{
+    padding: 10px;
+}
+table > tbody > tr > td:nth-child(1){
+    background-color: #aafeff;
+    font-weight: 600;
+}
+
+table > tbody > tr > td:nth-child(2){
+    background-color: rgb(217, 255, 255);
+}
+
+#detalhes-receita, #detalhes-gastos{
+    width: 400px;
+    min-height: 400px;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+}
+
+#detalhes-receita > table > tbody > tr > td:nth-child(1){
+    background-color: #569d45;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#detalhes-receita > table > tbody > tr > td:nth-child(2){
+    background-color: rgb(180, 255, 170);
+}
+
+#detalhes-gastos > table > tbody > tr > td:nth-child(1){
+    background-color: #ff3835;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#detalhes-gastos > table > tbody > tr > td:nth-child(2){
+    background-color: rgb(255, 211, 211);
+
+}
+
+#TRreceita, #TRgastos{
+    cursor: pointer;
+}
+
+#TRreceita:hover, #TRgastos:hover{
+    transform: scale(1.05);
+    border: 1px black solid;
+    transition: all 0.5s;
+}

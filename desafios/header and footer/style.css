@@ -1,0 +1,172 @@
+:root{
+    --primary: #FFF2DE;
+    --destaque: #000000;
+    --secundary: #ffffff;
+    --button: #D9D9D9;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    color: var(--secundary);
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--primary);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    pointer-events: none;
+}
+
+body > header{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--destaque);
+    padding: 0vw 5vw;
+    font-size: 1.2vw;
+}
+
+body > header > .linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1vw;
+}
+
+body > header > .linha > .separador{
+    /* width: 50vw; */
+    width: 80%;
+    height: 0.1vw;
+    background-color: var(--secundary);
+}
+
+body > header > .linha > .star{
+    width: 1.5vw;
+    height: 1.5vw;
+
+    background-color: var(--secundary);
+    -webkit-clip-path: polygon(50% 0, 64% 36%, 100% 50%, 67% 64%, 50% 100%, 38% 64%, 0 50%, 39% 36%);
+    clip-path: polygon(50% 0, 64% 36%, 100% 50%, 67% 64%, 50% 100%, 38% 64%, 0 50%, 39% 36%);
+}
+
+body > header > .logo > img{
+    /* width: 100px; */
+    width: 6vw
+}
+
+body > header > .menu > nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    color: var(--secundary);
+}
+
+body > header > .menu > nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+body > header > .menu > nav > a > button{
+    background-color: var(--button);
+    color: var(--destaque);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > header > .menu > nav > a > button{
+    width: 6vw;
+    height: 5vh;
+    border-radius: 1vw;
+    font-size: 1vw;
+    border: 0;
+}
+
+body > header > .menu > nav > .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    margin-left: 1vw;
+}
+
+body > header > .menu > nav > .user > img{
+    width: 3vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+body > footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vw;
+    width: 100%;
+    background-color: black;
+    height: 50vh;
+    padding: 0vw 4vw;
+}
+
+body > footer > .part-1,
+body > footer > .part-2{
+    width: 50%;
+    height: 80%;
+}
+
+body > footer > .part-1{
+    border-right: 1px var(--secundary) solid;
+}
+
+body > footer > .part-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 2vw;
+}
+
+body > footer > .part-1 > p,
+body > footer > .part-2 > div > p{
+    font-size: 1.2vw;
+}
+
+body > footer > .part-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+}
+
+body > footer > .part-1 > .logo{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+body > footer > .part-1 > .logo > img{
+    width: 10vw;
+}
+
+body > footer > .part-1 > .logo > h3,
+body > footer > .part-2 > h3{
+    font-size: 2vw;
+}

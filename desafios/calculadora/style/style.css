@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    color: black;
+    margin: 0;
+    font-size: 15pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, form, div.item > label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e4e4e4;
+}
+
+form{
+    gap: 20px;
+    padding: 0px 20px 0px 20px;
+    width: 450px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+fieldset{
+    border: none;
+    width: 100%;
+}
+
+fieldset > legend{
+    text-align: center;
+    font-size: 17pt;
+    font-style: italic;
+
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #008688;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+div.itens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+div.itens > div.item{
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    width: 120px;
+    height: 135px;
+}
+
+div.itens > div.item:hover{
+    transform: scale(1.1);
+    border: 2px black solid;
+}
+
+div.itens > div.item.on{
+    background-color: #008688;
+
+}
+
+div.itens > div.item.on > label > p{
+    color: #ffffff;
+}

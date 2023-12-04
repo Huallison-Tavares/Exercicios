@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(7, 0, 29);
+}
+
+section.react, 
+section.comentarios,
+section.coment{
+    width: 70%;
+    /* background-color: bisque; */
+}
+
+section.coment{
+    margin-top: 50px;
+}
+
+body, section.react,
+.react > .reactions,
+.reactions > .emoji > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.react > .reactions{
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.reactions > .emoji{
+    display: flex;
+    gap: 30px;
+}
+
+.reactions > .emoji > div{
+    width: 100px;
+    height: 100px;
+    gap: 10px;
+    border-radius: 20px;
+    /* background-color: aliceblue; */
+}
+
+.reactions > .emoji > div > img{
+    width: 50px;
+}
+
+section.react > h1{
+    width: 100%;
+    border-bottom: #ffffff88 1px solid;
+    padding-bottom: 5px;
+}
+
+.reactions > .emoji > div#on{
+    border: #ffffff 1px solid;
+    transition: all 0.2s;
+}
+
+.reactions > .emoji > div:hover{
+    border: #ffffff54 1px solid;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+section.comentarios{
+    margin-top: 20px;
+}
+
+section.comentarios > h2{
+    width: 100%;
+    border-bottom: #ffffff88 1px solid;
+    padding-bottom: 5px;
+}
+
+section.comentarios > h2, section.comentarios > h2 > span{
+    color: #ffffff88;
+
+}
+
+section.comentarios > .campoComentarios,
+section.coment > .comentario{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+section.comentarios > .campoComentarios > .img,
+section.coment > .comentario > .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+section.comentarios > .campoComentarios > .img::before,
+section.coment > .comentario > .img::before{
+    content: "";
+    display: flex;
+    position:relative;
+
+    left: 50px;
+    top: 17px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #ffffff;
+
+}
+
+section.comentarios > .campoComentarios > .img > img,
+section.coment > .comentario > .img > img{
+    width: 50px;
+    margin-top: -20px;
+}
+
+section.comentarios > .campoComentarios > .text > textarea{
+    color: black;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section.comentarios > .campoComentarios > .text,
+section.comentarios > .campoComentarios > .text > .enviar{
+    width: 100%;
+}
+
+section.comentarios > .campoComentarios > .text > .enviar{
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+section.comentarios > .campoComentarios > .text > .enviar> button{
+    color: #000000;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.comentarios > .campoComentarios > .text > .enviar > input{
+    width: 100%;
+    height: 30px;
+    color: #000000;
+}
+
+section.coment > .comentario > .text{
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.coment > .comentario > .text > .button{
+    display: flex;
+    gap: 10px;
+}
+
+section.coment > .comentario > .text > .button > button{
+    background-color: transparent;
+    border: 0;
+
+}
+
+section.coment > .comentario > .text > .button > button.like{
+    border: transparent 1px solid;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    opacity: 0.7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section.coment > .comentario > .text > .button > button.like:hover{
+    border: #ffffff 1px solid;
+    opacity: 0.9;
+    transition: all 0.6s;
+}
+
+section.coment > .comentario > .text > .button > button.like#select{
+    opacity: 1;
+    border: #ffffff 1px solid;
+
+}
+
+section.coment > .comentario > .text > .button > button.like img{
+    width: 20px;
+}
+
+section.coment > .comentario > .text > .button > button#responder{
+    opacity: 0.7;
+    cursor: pointer;
+}
+section.coment > .comentario > .text > .button > button#responder:hover{
+    opacity: 0.9;
+}

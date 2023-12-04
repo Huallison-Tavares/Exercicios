@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    color: black;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    min-height: 610px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+img{
+    width: 50px;
+}
+
+section{
+    border: 2px #000000 solid;
+}
+
+section > form > div.form{
+    display: none;
+}
+
+section > form > div.form#on{
+    display: flex;
+    flex-direction: column;
+}
+
+div.botoes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+div.botoes > button{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+button#enviar{
+    display: none;
+}
+
+button.voltar{
+    opacity: 0.4;
+}
+
+section > form > div.form > h1{
+    font-size: 20pt;
+    text-align: center;
+}
+
+section > form,
+section > form > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section > form > button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #008688;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+section > form > button:hover{
+    width: 200px;
+    height: 40px;
+    background-color: #00bec1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
